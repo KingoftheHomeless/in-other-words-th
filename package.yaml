@@ -1,0 +1,46 @@
+name:                in-other-words-th
+version:             0.1.0.0
+synopsis:            makeEff and makeEff_ for in-other-words
+description:
+  Less boilerplate for the effect system in-other-words
+homepage:            https://github.com/KingoftheHomeless/in-other-words-th
+license:             BSD3
+author:              Valentin Herrmann
+maintainer:          herr.valentin.mann@gmail.com
+copyright:           BSD3
+category:            Control
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - th-abstraction >= 0.3 && < 0.5
+  - template-haskell >= 2.15 && < 2.19
+  - syb >= 0.7 && < 0.8
+  - in-other-words >= 0.1 && < 0.3
+
+library:
+  ghc-options: -Wall -haddock
+  source-dirs: src
+
+default-extensions:
+  - BangPatterns
+  - ConstraintKinds
+  - DataKinds
+  - DerivingStrategies
+  - EmptyCase
+  - FlexibleContexts
+  - FlexibleInstances
+  - FunctionalDependencies
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - LambdaCase
+  - PolyKinds
+  - QuantifiedConstraints
+  - RankNTypes
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TypeApplications
+  - TypeOperators
+  - TypeFamilies
+  - UndecidableInstances

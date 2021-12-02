@@ -1,0 +1,58 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.5.
+--
+-- see: https://github.com/sol/hpack
+
+name:           in-other-words-th
+version:        0.1.0.0
+synopsis:       makeEff and makeEff_ for in-other-words
+description:    Less boilerplate for the effect system in-other-words
+category:       Control
+homepage:       https://github.com/KingoftheHomeless/in-other-words-th
+author:         Valentin Herrmann
+maintainer:     herr.valentin.mann@gmail.com
+copyright:      BSD3
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      Control.Effect.TH
+      Control.Effect.TH.Internal.Common
+  other-modules:
+      Paths_in_other_words_th
+  hs-source-dirs:
+      src
+  default-extensions:
+      BangPatterns
+      ConstraintKinds
+      DataKinds
+      DerivingStrategies
+      EmptyCase
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      GeneralizedNewtypeDeriving
+      LambdaCase
+      PolyKinds
+      QuantifiedConstraints
+      RankNTypes
+      ScopedTypeVariables
+      StandaloneDeriving
+      TypeApplications
+      TypeOperators
+      TypeFamilies
+      UndecidableInstances
+  ghc-options: -Wall -haddock
+  build-depends:
+      base >=4.7 && <5
+    , in-other-words >=0.1 && <0.3
+    , syb ==0.7.*
+    , template-haskell >=2.15 && <2.19
+    , th-abstraction >=0.3 && <0.5
+  default-language: Haskell2010

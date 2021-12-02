@@ -1,0 +1,8 @@
+.ghc.environment*
+.hie
+.direnv
+cabal.project.local
+dist-newstyle
+result*
+TAGS
+*~
